@@ -27,9 +27,32 @@ Version: 1.0
 -- Footer
 -- Mobile Media
 */
-
+:root{
+    --main: #f1673b;
+}
 
 /* Body */
+
+/* Extra Stylings by Erfan Ahmed Siam */
+
+.list-group > .active {
+    background-color: white !important;
+    color: var(--main) !important;
+    border-right: 5px solid var(--main)!important;
+    border-top: 1px dashed rgb(224, 224, 224);
+    border-bottom: 1px dashed rgb(224, 224, 224);
+    font-weight: 700;
+}
+.container{
+    max-width: 1600px !important;
+}
+.offer-section{
+    background-image: url("/img/head.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 body {
@@ -505,17 +528,17 @@ a {
 
 .btn-primary {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d92662+0,e23744+100 */
-    background: #d92662;
+    background: #f1673b;
     /* Old browsers */
-    background: -moz-linear-gradient(45deg, #d92662 0%, #e23744 100%);
+    background: -moz-linear-gradient(45deg, #f46f33 0%, #f0554c 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #d92662 0%, #e23744 100%);
+    background: -webkit-linear-gradient(45deg, #f46f33 0%, #f0554c 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #d92662 0%, #e23744 100%);
+    background: linear-gradient(45deg, #f46f33 0%, #f0554c 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#d92662', endColorstr='#e23744', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
-    border-color: #d92662;
+    border-color: #f0554c;
 }
 
 .btn-primary:hover {
@@ -554,12 +577,12 @@ a {
 }
 
 .text-primary {
-    color: #e23744 !important;
+    color: #f1673b !important;
     text-decoration: none !important;
 }
 
 a {
-    color: #e23744;
+    color: #f1673b;
     text-decoration: none !important;
 }
 
@@ -570,7 +593,7 @@ p {
 
 .btn-link {
     font-weight: 400;
-    color: #e23744;
+    color: #f1673b;
     text-decoration: none !important;
 }
 
@@ -712,6 +735,24 @@ p {
     background: #f5cd25;
 }
 
+.feather-16{
+    font-size: 16px;
+}
+.feather-20{
+    font-size: 20px;
+}
+
+.feather-24{
+    font-size: 24px;
+}
+
+.feather-32{
+    font-size: 32px;
+}
+
+.badge-danger{
+    background-color: #f1673b;
+}
 
 /* Login Page */
 

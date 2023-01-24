@@ -193,7 +193,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="container">
             <div class="cat-slider">
                 <div class="cat-item px-1 py-3">
@@ -255,7 +255,7 @@
         <div class="">
             <p class="font-weight-bold pt-4 m-0">FEATURED ITEMS</p>
             <!-- slider -->
-            <div class="trending-slider rounded">
+            <!-- <div class="trending-slider rounded">
                 <div class="osahan-slider-item">
                     <div class="list-card bg-white h-100 rounded overflow-hidden position-relative shadow-sm">
                         <div class="list-card-image">
@@ -321,153 +321,179 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-    </div>
+    </div> -->
     <!-- Menu -->
     <div class="container position-relative">
         <div class="row">
-            <div class="col-md-8 pt-3">
+            <div class="col-md-3 pt-3" id="categories">
+                <div class="d-flex item-aligns-center">
+                    <p class="font-weight-bold h6 p-3 border-bottom mb-0 w-100">Categories</p>
+                    <!-- <a class="small text-primary font-weight-bold ml-auto" href="#">View all <i class="feather-chevrons-right"></i></a> -->
+                </div>
+                <ul class="list-group list-group-flush overflow-hidden sticky_sidebar shadow-sm rounded rounded-sm">
+
+                        <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action" href="#quick-bites">
+                            Quick Bites
+                            <span class="badge badge-danger">14</span>
+                        </a>
+                    <a class="list-group-item list-group-item-action" href="#starters">Starters</a>
+                    <a class="list-group-item list-group-item-action" href="#soup">Soup</a>
+                    <a class="list-group-item list-group-item-action">A fourth item</a>
+                    <a class="list-group-item list-group-item-action">And a fifth one</a>
+                  </ul>
+            </div>
+            <div class="col-md-5 pt-3">
+                <!-- Search -->
+                <div class="input-group py-2 px-4 sticky-top bg-white shadow-sm rounded">
+                    <input type="text" class=" form-control form-control-lg input_search border-right-0" id="inlineFormInputGroup" value="Osahan eats...">
+                    <div class="input-group-prepend">
+                        <div class="btn input-group-text bg-white border_search border-left-0 text-primary"><i class="feather-search"></i></div>
+                    </div>
+                </div>
                 <div class="shadow-sm rounded bg-white mb-3 overflow-hidden">
                     <div class="d-flex item-aligns-center">
                         <p class="font-weight-bold h6 p-3 border-bottom mb-0 w-100">Menu</p>
                         <!-- <a class="small text-primary font-weight-bold ml-auto" href="#">View all <i class="feather-chevrons-right"></i></a> -->
                     </div>
-                    <div class="row m-0">
-                        <h6 class="p-3 m-0 bg-light w-100">Quick Bites <small class="text-black-50">3 ITEMS</small></h6>
-                        <div class="col-md-12 px-0 border-top">
-                            <div class="">
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub </h6>
-                                            <p class="text-muted mb-0">$250</p>
+                    <div data-bs-spy="scroll" data-bs-target="#categories" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                        <div class="row m-0" id="quick-bites">
+                            <h6 class="p-3 m-0 bg-light w-100">Quick Bites <small class="text-black-50">3 ITEMS</small></h6>
+                            <div class="col-md-12 px-0 border-top">
+                                <div class="">
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub </h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
-                                            <p class="text-muted mb-0">$600</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
+                                                <p class="text-muted mb-0">$600</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-danger text-white">Non veg</span></h6>
-                                            <p class="text-muted mb-0">$250</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m-0">
-                        <h6 class="p-3 m-0 bg-light w-100">Starters <small class="text-black-50">3 ITEMS</small></h6>
-                        <div class="col-md-12 px-0 border-top">
-                            <div class="">
-                                <div class="p-3 border-bottom menu-list">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <img alt="#" src="img/starter1.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub </h6>
-                                            <p class="text-muted mb-0">$250</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-3 border-bottom menu-list">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <img alt="#" src="img/starter2.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
-                                            <p class="text-muted mb-0">$600</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="p-3 border-bottom menu-list">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <img alt="#" src="img/starter3.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
-                                            <p class="text-muted mb-0">$250</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-danger text-white">Non veg</span></h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row m-0">
-                        <h6 class="p-3 m-0 bg-light w-100">Soups <small class="text-black-50">8 ITEMS</small></h6>
-                        <div class="col-md-12 px-0 border-top">
-                            <div class="bg-white">
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub </h6>
-                                            <p class="text-muted mb-0">$250</p>
+                        <div class="row m-0" id="starters">
+                            <h6 class="p-3 m-0 bg-light w-100">Starters <small class="text-black-50">3 ITEMS</small></h6>
+                            <div class="col-md-12 px-0 border-top">
+                                <div class="">
+                                    <div class="p-3 border-bottom menu-list">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <img alt="#" src="img/starter1.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub </h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom menu-list">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <img alt="#" src="img/starter2.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
+                                                <p class="text-muted mb-0">$600</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 border-bottom menu-list">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <img alt="#" src="img/starter3.jpg" alt="askbootstrap" class="mr-3 rounded-pill ">
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
-                                            <p class="text-muted mb-0">$600</p>
+                            </div>
+                        </div>
+                        <div class="row m-0" id="soup">
+                            <h6 class="p-3 m-0 bg-light w-100">Soups <small class="text-black-50">8 ITEMS</small></h6>
+                            <div class="col-md-12 px-0 border-top">
+                                <div class="bg-white">
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub </h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-success veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
-                                            <p class="text-muted mb-0">$250</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
+                                                <p class="text-muted mb-0">$600</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-success veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub </h6>
-                                            <p class="text-muted mb-0">$250</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-success veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 border-bottom gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
-                                            <p class="text-muted mb-0">$600</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-success veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub </h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="p-3 gold-members">
-                                    <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
-                                    <div class="media">
-                                        <div class="mr-3 font-weight-bold text-success veg">.</div>
-                                        <div class="media-body">
-                                            <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
-                                            <p class="text-muted mb-0">$250</p>
+                                    <div class="p-3 border-bottom gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-danger non_veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Cheese corn Roll <span class="badge badge-danger">BEST SELLER</span></h6>
+                                                <p class="text-muted mb-0">$600</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-3 gold-members">
+                                        <span class="float-right"><a href="#" class="btn btn-outline-secondary btn-sm" data-toggle="modal" data-target="#extras">ADD</a></span>
+                                        <div class="media">
+                                            <div class="mr-3 font-weight-bold text-success veg">.</div>
+                                            <div class="media-body">
+                                                <h6 class="mb-1">Chicken Tikka Sub <span class="badge badge-success">Pure Veg</span></h6>
+                                                <p class="text-muted mb-0">$250</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

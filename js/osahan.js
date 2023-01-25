@@ -23,8 +23,10 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     $('.offer-slider').slick({
         //   centerMode: true,
         //   centerPadding: '30px',
-        slidesToShow: 4,
+        slidesToShow: 1,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed:1000,
         responsive: [{
                 breakpoint: 768,
                 settings: {

@@ -132,16 +132,16 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         ]
     });
 
-    // Osahan Slider
-    $('.osahan-slider').slick({
+    // magic Slider
+    $('.magic-slider').slick({
         centerMode: false,
         slidesToShow: 1,
         arrows: false,
         dots: true
     });
 
-    // osahan-slider-map
-    $('.osahan-slider-map').slick({
+    // magic-slider-map
+    $('.magic-slider-map').slick({
         //   centerMode: true,
         //   centerPadding: '30px',
         autoplay: true,

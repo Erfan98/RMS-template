@@ -69,11 +69,17 @@ Version: 1.0
     border-bottom: 1px dashed rgb(224, 224, 224);
     font-weight: 700;
 }
-.container{
+/* .container{
     max-width: 1600px !important;
+} */
+
+@media (min-width:1600px) {
+    .container{
+        max-width: 1400px !important;
+    }
 }
 .offer-section{
-    background-image: url("img/head.png");
+    background-image: url("../img/head.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

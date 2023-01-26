@@ -35,6 +35,13 @@ Version: 1.0
 /* Body */
 
 /* Extra Stylings by Erfan Ahmed Siam */
+
+.page-card{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 .form-control{
     border-radius: 20px;
 }

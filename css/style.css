@@ -73,7 +73,7 @@ Version: 1.0
     max-width: 1600px !important;
 }
 .offer-section{
-    background-image: url("/img/head.png");
+    background-image: url("img/head.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;

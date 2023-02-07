@@ -43,12 +43,27 @@ Version: 1.0
     margin-bottom: 0.5rem;
 }
 .form-control{
-    border-radius: 20px;
+    /* border-radius: 50px; */
+    height: 50px;
+    /* font-size: 100px; */
 }
+/* input{
+    font-size: 50px;
+} */
 
-.map-responsive{
+.map{
+    border-radius: 20px;
+    /* border: dashed 3px var(--main) */
+}
+.dash{
+    border-radius: 20px;
+    border: dashed 5px var(--main);
+    background-color: white;
+    /* box-shadow: 1px 1px 10px var(--main); */
+}
+/* .map-responsive{
     overflow:hidden;
-    padding-bottom:60%;
+    padding-bottom:90%;
     position:relative;
     height:0;
 }
@@ -59,7 +74,7 @@ Version: 1.0
     height:100%;
     width:100%;
     position:absolute;
-}
+} */
 
 .list-group > .active {
     background-color: white !important;
@@ -543,6 +558,8 @@ a {
     color: #ffffff !important;
 }
 
+
+
 .bg-primary {
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d92662+0,e23744+100 */
     /* background: #d92662; */
@@ -594,7 +611,7 @@ a {
 .btn-outline-primary {
     color: var(--main);
     border-color: var(--main);
-    border-radius: 20px 20px;
+    /* border-radius: 20px 20px; */
 }
 
 .btn-outline-primary:hover {

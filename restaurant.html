@@ -141,7 +141,8 @@
                                 </div>
                             </a>
                             <!-- signin -->
-                            <a href="login.html" class="widget-header mr-4 text-dark m-none">
+                            <a href="#" data-toggle="modal" data-target="#login"
+                                class="widget-header mr-4 text-dark m-none">
                                 <div class="icon d-flex align-items-center">
                                     <i class="feather-user h6 mr-2 mb-0"></i> <span>Sign in</span>
                                 </div>
@@ -1275,6 +1276,214 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- login Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3 class="text-center font-weight-bold">Login</h3>
+                    <form class="m-3 " action="verification.html">
+                        <div class="form-group">
+                            <!-- <label for="exampleInputEmail1" class="text-dark h5">Email</label> -->
+                            <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <!-- <label for="exampleInputPassword1" class="text-dark">Password</label> -->
+                            <input type="password" placeholder="Enter Password" class="form-control"
+                                id="exampleInputPassword1">
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">Submit</button>
+
+                        <!--
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="py-2">
+                                <button class="btn btn btn-facebook btn-block"><i class="feather-facebook"></i> Connect
+                                    with Facebook</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="py-2">
+                                <button class="btn btn btn-facebook btn-block"><i class="feather-google"></i> Connect
+                                    with Facebook</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    </form>
+                    <a href="" class="text-decoration-none"
+                        data-dismiss="modal"
+                        data-toggle="modal"
+                        data-target="#forgot-password">
+                        <p class="text-center">Forgot your password?</p>
+                    </a>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <p class="text-center m-0">Don't have an account?</p>
+                    </div>
+
+                    <div class="m-3">
+                        <button class="btn btn-outline-primary btn-lg btn-block"
+                         data-dismiss="modal" data-target="#register" data-toggle="modal">Register</button>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer p-0 border-0">
+                <div class="col-6 m-0 p-0">
+                    <button type="button" class="btn border-top btn-lg btn-block"
+                        data-dismiss="modal">Close</button>
+                </div>
+                <div class="col-6 m-0 p-0">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Apply</button>
+                </div>
+            </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center font-weight-bold">Register</h3>
+                <form class="m-3 " action="verification.html">
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1" class="text-dark h5">Email</label> -->
+                        <input type="text" placeholder="Name" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div><div class="form-group">
+                        <!-- <label for="exampleInputEmail1" class="text-dark h5">Email</label> -->
+                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <!-- <label for="exampleInputPassword1" class="text-dark">Password</label> -->
+                        <input type="password" placeholder="Enter Password" class="form-control"
+                            id="exampleInputPassword1">
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block">Submit</button>
+
+                    <!--
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="py-2">
+                            <button class="btn btn btn-facebook btn-block"><i class="feather-facebook"></i> Connect
+                                with Facebook</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="py-2">
+                            <button class="btn btn btn-facebook btn-block"><i class="feather-google"></i> Connect
+                                with Facebook</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                </form>
+                <!-- <a href="forgot_password.html" class="text-decoration-none">
+                    <p class="text-center">Forgot your password?</p>
+                </a> -->
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-center m-0">Already Have an account?</p>
+                </div>
+
+                <div class="m-3">
+                    <button class="btn btn-outline-primary btn-lg btn-block"
+                    data-dismiss="modal" data-toggle="modal"
+                    data-target="#login">Log In</button>
+                </div>
+            </div>
+            <!-- <div class="modal-footer p-0 border-0">
+            <div class="col-6 m-0 p-0">
+                <button type="button" class="btn border-top btn-lg btn-block"
+                    data-dismiss="modal">Close</button>
+            </div>
+            <div class="col-6 m-0 p-0">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Apply</button>
+            </div>
+        </div> -->
+        </div>
+    </div>
+    </div>
+
+    <!-- Forgot Password modal  -->
+
+    <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 class="text-center font-weight-bold">Forgot Password</h3>
+                <form class="m-3 " action="verification.html">
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1" class="text-dark h5">Email</label> -->
+                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block">Submit</button>
+
+                    <!--
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="py-2">
+                            <button class="btn btn btn-facebook btn-block"><i class="feather-facebook"></i> Connect
+                                with Facebook</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="py-2">
+                            <button class="btn btn btn-facebook btn-block"><i class="feather-google"></i> Connect
+                                with Facebook</button>
+                        </div>
+                    </div>
+                </div> -->
+
+                </form>
+                <!-- <a href="forgot_password.html" class="text-decoration-none">
+                    <p class="text-center">Forgot your password?</p>
+                </a> -->
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="text-center m-0">Already Have an account?</p>
+                </div>
+
+                <div class="m-3">
+                    <button class="btn btn-outline-primary btn-lg btn-block"
+                    data-dismiss="modal" data-toggle="modal"
+                    data-target="#login">Log In</button>
+                </div>
+            </div>
+            <!-- <div class="modal-footer p-0 border-0">
+            <div class="col-6 m-0 p-0">
+                <button type="button" class="btn border-top btn-lg btn-block"
+                    data-dismiss="modal">Close</button>
+            </div>
+            <div class="col-6 m-0 p-0">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Apply</button>
+            </div>
+        </div> -->
+        </div>
+    </div>
     </div>
 
     <!-- Allargy Modal -->

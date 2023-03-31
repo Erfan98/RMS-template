@@ -381,23 +381,72 @@
                     <div class="font-weight-bold h6 p-3 border-bottom mb-0 w-100 text-primary bg-white">Categories</div>
                     <!-- <a class="small text-primary font-weight-bold ml-auto" href="#">View all <i class="feather-chevrons-right"></i></a> -->
                 </div>
+
+                <!-- <ul class="list-group list-group-flush">
+                    <a data-toggle="collapse" class="list-group-item d-flex align-items-center justify-content-between list-group-item-action text-decoration-none"
+                        data-target="#vaji">
+                        Quick Bites
+                        <span class="badge badge-danger">14</span>
+
+                    </a>
+
+                            <ul class="list-group list-group-flush collapse" id="vaji">
+                                <li class="list-group-item">vaji</li>
+                                <li class="list-group-item">vaji</li>
+                                <li class="list-group-item">vaji</li>
+                            </ul>
+
+
+                    <li class="list-group-item"><a href="">samosa</a></li>
+                    <li class="list-group-item"><a href="">samosa</a></li>
+
+                </ul> -->
                 <div class="bg-white list-group list-group-flush sticky_sidebar shadow-sm rounded rounded-sm">
 
-                    <a class="d-flex align-items-center  justify-content-between list-group-item list-group-item-action"
-                        href="#quick-bites">
-                        Quick Bites
-                        <span class="badge badge-danger">14</span>
-                    </a>
-                    <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action"
-                        href="#starters">
-                        Quick Bites
-                        <span class="badge badge-danger">14</span>
-                    </a>
-                    <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action"
-                        href="#soup">
-                        Quick Bites
-                        <span class="badge badge-danger">14</span>
-                    </a>
+                        <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action"
+                            href="#quick-bites" data-toggle="collapse" data-target="#quick-bites-sub">
+                            Quick Bites
+                            <span class="badge badge-danger">14</span>
+                        </a>
+                        <ul class="collapse list-group list-group-flush" id="quick-bites-sub">
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                        </ul>
+
+
+
+                        <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action"
+                            href="#quick-bites" data-toggle="collapse" data-target="#quick-bites-sub">
+                            Quick Bites
+                            <span class="badge badge-danger">14</span>
+                        </a>
+                        <ul class="collapse list-group list-group-flush" id="quick-bites-sub">
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                        </ul>
+
+
+
+                        <a class="d-flex align-items-center justify-content-between list-group-item list-group-item-action"
+                            href="#quick-bites" data-toggle="collapse" data-target="#quick-bites-sub">
+                            Quick Bites
+                            <span class="badge badge-danger">14</span>
+                        </a>
+                        <ul class="collapse list-group list-group-flush" id="quick-bites-sub">
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                            <li class="list-group-item">dasfsdf</li>
+                        </ul>
+
+
 
 
                 </div>
@@ -408,14 +457,14 @@
                     Sorry We are currently Close. We will open tomorrow.
                 </div>
                 <!-- Search -->
-                <div class="input-group py-2 px-4 sticky-top bg-white shadow-sm rounded">
+                <!-- <div class="input-group py-2 px-4 sticky-top bg-white shadow-sm rounded">
                     <input type="text" class=" form-control form-control-lg input_search border-right-0"
                         id="inlineFormInputGroup" value="Search">
                     <div class="input-group-prepend">
                         <div class="btn input-group-text bg-white border_search border-left-0 text-primary"><i
                                 class="feather-search"></i></div>
                     </div>
-                </div>
+                </div> -->
                 <div class="shadow-sm rounded bg-white mb-3 overflow-hidden">
                     <!-- <div class="d-flex item-aligns-center">
                         <p class="font-weight-bold h6 p-3 border-bottom mb-0 w-100 text-primary">Menu</p>
@@ -1420,71 +1469,9 @@
         </div>
     </div>
     </div>
-
     <!-- Forgot Password modal  -->
 
-    <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <h3 class="text-center font-weight-bold">Forgot Password</h3>
-                <form class="m-3 " action="verification.html">
-                    <div class="form-group">
-                        <!-- <label for="exampleInputEmail1" class="text-dark h5">Email</label> -->
-                        <input type="email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
-                    </div>
-                    <button class="btn btn-primary btn-lg btn-block">Submit</button>
-
-                    <!--
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="py-2">
-                            <button class="btn btn btn-facebook btn-block"><i class="feather-facebook"></i> Connect
-                                with Facebook</button>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="py-2">
-                            <button class="btn btn btn-facebook btn-block"><i class="feather-google"></i> Connect
-                                with Facebook</button>
-                        </div>
-                    </div>
-                </div> -->
-
-                </form>
-                <!-- <a href="forgot_password.html" class="text-decoration-none">
-                    <p class="text-center">Forgot your password?</p>
-                </a> -->
-                <div class="d-flex align-items-center justify-content-center">
-                    <p class="text-center m-0">Already Have an account?</p>
-                </div>
-
-                <div class="m-3">
-                    <button class="btn btn-outline-primary btn-lg btn-block"
-                    data-dismiss="modal" data-toggle="modal"
-                    data-target="#login">Log In</button>
-                </div>
-            </div>
-            <!-- <div class="modal-footer p-0 border-0">
-            <div class="col-6 m-0 p-0">
-                <button type="button" class="btn border-top btn-lg btn-block"
-                    data-dismiss="modal">Close</button>
-            </div>
-            <div class="col-6 m-0 p-0">
-                <button type="button" class="btn btn-primary btn-lg btn-block">Apply</button>
-            </div>
-        </div> -->
-        </div>
-    </div>
-    </div>
+    div
 
     <!-- Allargy Modal -->
     <div class="modal fade" id="allergy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

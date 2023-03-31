@@ -8,12 +8,13 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top 
+        scrollTop: $($.attr(this, 'href')).offset().top
     }, 700);
 });
 
 
-(function($) {
+(function ($) {
+
     "use strict"; // Start of use strict
 
     // Tooltip
@@ -171,21 +172,29 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     });
 
 
-    var $main_nav = $('#main-nav');
-    var $toggle = $('.toggle');
+    // var $main_nav = $('#main-nav');
+    // var $toggle = $('#toggle');
 
-    var defaultOptions = {
-        disableAt: false,
-        customToggle: $toggle,
-        levelSpacing: 40,
-        navTitle: 'Askbootstrap',
+    // var defaultOptions = {
+    //     disableAt: false,
+    //     customToggle: $toggle,
+    //     levelSpacing: 40,
+    //     navTitle: 'Askbootstrap',
+    //     levelTitles: true,
+    //     levelTitleAsBack: true,
+    //     pushContent: '#container',
+    //     insertClose: 2
+    // };
+
+    // // call our plugin
+    // var Nav = $main_nav.hcOffcanvasNav(defaultOptions);
+
+    $('#main-nav').hcOffcanvasNav({
+        disableAt: 1024,
+        customToggle: $('#toggle'),
+        navTitle: 'All Categories',
         levelTitles: true,
-        levelTitleAsBack: true,
-        pushContent: '#container',
-        insertClose: 2
-    };
-
-    // call our plugin
-    var Nav = $main_nav.hcOffcanvasNav(defaultOptions);
+        levelTitleAsBack: true
+      });
 
 })(jQuery); // End of use strict

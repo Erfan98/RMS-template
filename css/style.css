@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 /*
 Template Name: Swiggiweb - Online Food Ordering Website Template
 Author: Askbootstrap
@@ -35,6 +36,24 @@ Version: 1.0
 /* Body */
 
 /* Extra Stylings by Erfan Ahmed Siam */
+.offer-banner{
+    transition:0.3s;
+
+}
+.offer-banner:hover{
+    transform: scale(1.1);
+    /* border: solid grey; */
+    box-shadow: 5px 5px 20px grey;
+}
+
+.hc-nav-trigger{
+    position: unset !important;
+    /* top: 0px !important; */
+}
+#lblCartCount{
+    position: absolute;
+    top: -5px;
+}
 
 .page-card{
     background-color: white;
@@ -50,6 +69,45 @@ Version: 1.0
 /* input{
     font-size: 50px;
 } */
+.fa-brands{
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
+    /* width: 50px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 5px;
+}
+.fa-brands:hover{
+    opacity: 0.75;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
 
 .map{
     border-radius: 20px;
@@ -290,12 +348,13 @@ a {
 }
 
 .border-custom-radio .custom-control-input:checked~.custom-control-label::before {
-    border-color: #d92662;
-    border: 1px solid #d92662;
+    border-color: var(--main);
+    border: 5px solid var(--main);
 }
 
 .border-custom-radio .custom-control-label::after {
     display: none;
+    /* background-color: var(--grad); */
 }
 
 .restaurant-pic {
@@ -1377,7 +1436,8 @@ footer .text-muted {
         margin-left: auto;
         padding: 0px;
     }
-    .header-main .col-8 .hc-nav-trigger {
+    /* .hc-nav-trigger */
+    .header-main .col-8  {
         top: 0px;
         right: 8px;
     }
@@ -1390,10 +1450,10 @@ footer .text-muted {
     .fixed-bottom-bar {
         padding-bottom: 56px;
     }
-    .hc-nav-trigger {
-        top: 18px;
+    /* .hc-nav-trigger {
+        top: -18px;
         left: 17px;
-    }
+    } */
     footer.section-footer.border-top.bg-dark {
         display: none;
     }
@@ -1405,11 +1465,11 @@ footer .text-muted {
     .py-5 {
         padding-top: 1rem!important;
     }
-    .hc-nav-trigger span,
+    /* .hc-nav-trigger span,
     .hc-nav-trigger span::before,
     .hc-nav-trigger span::after {
         background: #ffffff !important;
-    }
+    } */
     .login-page video {
         display: none;
     }
@@ -1452,10 +1512,10 @@ footer .text-muted {
         margin-left: auto;
         padding: 0px;
     }
-    .header-main .col-8 .hc-nav-trigger {
+    /* .header-main .col-8 .hc-nav-trigger {
         top: 0px;
         right: 8px;
-    }
+    } */
     .d-none {
         display: block !important;
     }
@@ -1465,10 +1525,10 @@ footer .text-muted {
     .fixed-bottom-bar {
         padding-bottom: 56px;
     }
-    .hc-nav-trigger {
-        top: 18px;
+    /* .hc-nav-trigger {
+        top: -18px;
         left: 17px;
-    }
+    } */
     footer.section-footer.border-top.bg-dark {
         display: none;
     }
@@ -1480,11 +1540,11 @@ footer .text-muted {
     .py-5 {
         padding-top: 1rem!important;
     }
-    .hc-nav-trigger span,
+    /* .hc-nav-trigger span,
     .hc-nav-trigger span::before,
     .hc-nav-trigger span::after {
         background: #ffffff !important;
-    }
+    } */
     .login-page video {
         display: none;
     }

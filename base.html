@@ -19,6 +19,11 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Sidebar CSS -->
     <link href="vendor/sidebar/demo.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/custom-owl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body class="fixed-bottom-bar" data-spy="scroll" data-target="#categories">
@@ -182,9 +187,20 @@
         <!-- header-main .// -->
     </header>
     <div class="d-none">
-        <div class="bg-primary p-3 d-flex align-items-center">
-            <a class="toggle togglew toggle-2" href="#"><span></span></a>
-            <h4 class="font-weight-bold m-0 text-white">Restaurant Name</h4>
+        <div class="border-bottom shadow p-3">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <!-- <a class="toggle" href="#"><span></span></a> -->
+                    <div class=" feather-menu h3 text-dark" id="toggle"></div>
+                </div>
+                <div class="col-8 text-center">
+                    <img class="img-fluid" width="180px" src="./img/logo1.png" alt="">
+                </div>
+                <div class="col-2 text-right">
+                    <div class="feather-shopping-cart h3 text-dark"></div>
+                    <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -192,7 +208,49 @@
     <!-- body starts -->
 
 
-
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/10/24/10/30/business-2884023_960_720.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Teimagine Digital Experience with</h2>
+                            <h1>Start-ups and solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="item">
+                <img src="img/carosel.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reimagine Digital Experience with</h2>
+                            <h1>Intelligent solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2017/05/04/16/37/meeting-2284501_960_720.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Peimagine Digital Experience with</h2>
+                            <h1>Intelligent Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </header>
 
 
     <!-- body Ends -->
@@ -502,6 +560,10 @@
     <script type="text/javascript" src="vendor/sidebar/hc-offcanvas-nav.js"></script>
     <!-- Custom scripts for all pages-->
     <script type="text/javascript" src="js/magic.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="js/custom-owl.js"></script>
 </body>
 
 </html>

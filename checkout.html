@@ -19,6 +19,8 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- Sidebar CSS -->
     <link href="vendor/sidebar/demo.css" rel="stylesheet">
+
+    <script src="vendor/fontAwesome.js"></script>
 </head>
 
 <body class="fixed-bottom-bar">
@@ -173,55 +175,87 @@
         <div class="container position-relative">
             <div class="py-5 row">
                 <div class="col-md-8 mb-3">
-                    <div>
+                    <div class="">
                         <div class="magic-cart-item mb-3 rounded shadow-sm bg-white overflow-hidden">
+
                             <div class="magic-cart-item-profile bg-white p-3">
                                 <div class="d-flex flex-column">
-                                    <h6 class="mb-3 font-weight-bold">Delivery Address</h6>
                                     <div class="row">
-                                        <div
-                                            class="custom-control col-lg-6 custom-radio mb-3 position-relative border-custom-radio">
-                                            <input type="radio" id="customRadioInline1" name="customRadioInline1"
-                                                class="custom-control-input" checked>
-                                            <label class="custom-control-label w-100" for="customRadioInline1">
-                                                <div>
-                                                    <div class="p-3 bg-white rounded shadow-sm w-100">
-                                                        <div class="d-flex align-items-center mb-2">
-                                                            <h6 class="mb-0">Home</h6>
-                                                            <p class="mb-0 badge badge-success ml-auto"><i
-                                                                    class="icofont-check-circled"></i> Default</p>
-                                                        </div>
-                                                        <p class="small text-muted m-0">1001 Veterans Blvd</p>
-                                                        <p class="small text-muted m-0">Redwood City, CA 94063</p>
+                                        <div class="custom-control pb-2 col-lg-6 custom-radio position-relative border-custom-radio mb-0">
+                                            <input type="radio" id="delivery" name="method" class="custom-control-input" data-toggle="collapse" data-target="#address">
+                                            <label class="custom-control-label w-100" for="delivery">
+                                                    <div class="p-3 rounded shadow-sm d-flex justify-content-center">
+                                                            <i class="fa-solid h1 fa-bicycle"></i>
+                                                            <h1 class="mx-3">Delivery</h1>
                                                     </div>
-                                                    <a href="#" data-toggle="modal" data-target="#exampleModal"
-                                                        class="btn btn-block btn-light border-top">Edit</a>
-                                                </div>
                                             </label>
                                         </div>
-                                        <div
-                                            class="custom-control col-lg-6 custom-radio position-relative border-custom-radio">
-                                            <input type="radio" id="customRadioInline2" name="customRadioInline1"
-                                                class="custom-control-input">
-                                            <label class="custom-control-label w-100" for="customRadioInline2">
-                                                <div>
-                                                    <div class="p-3 rounded bg-white shadow-sm w-100">
-                                                        <div class="d-flex align-items-center mb-2">
-                                                            <h6 class="mb-0">Work</h6>
-                                                            <p class="mb-0 badge badge-light ml-auto"><i
-                                                                    class="icofont-check-circled"></i> Select</p>
-                                                        </div>
-                                                        <p class="small text-muted m-0">Model Town, Ludhiana</p>
-                                                        <p class="small text-muted m-0">Punjab 141002, India</p>
-                                                    </div>
-                                                    <a href="#" data-toggle="modal" data-target="#exampleModal"
-                                                        class="btn btn-block btn-light border-top">Edit</a>
+
+                                        <div class="custom-control pb-2 col-lg-6 custom-radio position-relative border-custom-radio mb-0">
+                                            <input type="radio" id="collection" name="method" class="custom-control-input">
+                                            <label class="custom-control-label w-100" for="collection">
+                                                <div class="p-3 rounded shadow-sm d-flex justify-content-center">
+                                                    <i class="fa-solid h1 fa-shop"></i>
+                                                    <h1 class="mx-3">Collection</h1>
                                                 </div>
-                                            </label>
+                                        </label>
                                         </div>
+
                                     </div>
-                                    <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#exampleModal">
-                                        ADD NEW ADDRESS </a>
+                                    <form id="address" class="collapse p-3 border">
+                                        <div class="search_location p-3 text-right rounded mb-2">
+                                            <div class="input-group rounded shadow-sm overflow-hidden">
+                                                <div class="input-group-prepend">
+                                                    <button
+                                                        class="border-0 btn btn-outline-secondary text-dark bg-white btn-block"><i
+                                                            class="feather-search"></i></button>
+                                                </div>
+                                                <input type="text" class="shadow-none border-0 form-control"
+                                                    placeholder="Postcode Lookup ">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class=" font-weight-bold">
+                                                Address Line 1 </label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class=" font-weight-bold">
+                                                Address Line 2 </label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class="small font-weight-bold">
+                                                Address Line 3 </label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class=" font-weight-bold">
+                                                City</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class="font-weight-bold">
+                                                Postcode </label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleFormControlInput1" class="font-weight-bold">
+                                                Contact Number </label>
+                                            <input type="phone" required class="form-control" id="exampleFormControlInput1"
+                                                placeholder="">
+                                        </div>
+                                        <!-- <a class="btn btn-primary btn-block" href="#">SUBMIT</a> -->
+                                    </form>
+
                                 </div>
                             </div>
                         </div>
